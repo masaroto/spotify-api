@@ -35,7 +35,6 @@ namespace spotify_api.Controllers
             //System.Diagnostics.Debug.WriteLine(response.Content.ReadAsStringAsync().Result);
 
             return response.Content.ReadAsStringAsync().Result.ToString();
-
         }
 
         [HttpGet]
