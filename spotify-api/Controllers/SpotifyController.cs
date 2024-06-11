@@ -32,7 +32,6 @@ namespace spotify_api.Controllers
 
             var response = await _httpClient.PostAsync(token_uri, urlEnconded);
 
-            //System.Console.WriteLine(response.Content);
             //System.Diagnostics.Debug.WriteLine(response.Content.ReadAsStringAsync().Result);
 
             return response.Content.ReadAsStringAsync().Result.ToString();
